@@ -1,0 +1,138 @@
+/* Importa a fonte 'Poppins' do Google Fonts com diferentes pesos */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Configurações gerais para todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    --cor-branca: #fefefe;
+    --cor-preta: #060608;
+    --cor-azul: #7fb4f4;
+    --cor-cinza-escuro: #454955;
+    --cor-cinza: #a59e9e;
+}
+
+body {
+    background: var(--cor-branca);
+}
+
+.logo {
+    font-size: 25px;
+    color: var(--cor-preta);
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+    max-width: 150px;
+}
+
+.logo-imagem {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+header {
+    background-color: var(--cor-azul);
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    clear: both;
+    background: var(--cor-cinza);
+    text-align: center;
+    padding: 15px;
+}
+
+.postagem {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: var(--cor-branca);
+}
+
+/*Layout*/
+#area-logo, #area-menu{
+    padding: 10px;
+}
+
+#area-principal {
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+h2 {
+    color: var(--cor-azul);
+}
+
+h3 {
+    color: var(--cor-cinza-escuro);
+    background: var(--cor-branca);
+    padding: 5px;
+}
+
+.data-postagem {
+    font-size: 0.8em;
+    border-bottom: 1px solid var(--cor-branca);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#area-postagens {
+    width: auto;
+    background-color: var(--cor-branca);
+}
+
+h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+
+.horários {
+    color: var(--cor-cinza-escuro);
+    background: var(--cor-branca);
+    margin: 0 auto;
+    padding: auto;
+    text-align: center;
+}
+
+.branco {
+    color: var(--cor-branca);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:link, a:visited {
+    color: var(--cor-azul);
+}
+
+header a:link, header a:visited {
+    color: var(--cor-branca);
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--cor-azul);
+    background: var(--cor-branca);
+    text-decoration: none;
+}
