@@ -27,8 +27,9 @@ body {
 }
 
 .logo-imagem {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -37,8 +38,8 @@ body {
 }
 
 .home {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
     padding: 0px;
@@ -63,19 +64,20 @@ footer {
     background: var(--cor-branca);
 }
 
-/*Layout*/
-#area-logo, #area-menu{
+/* Layout */
+#area-logo,
+#area-menu {
     padding: 10px;
 }
 
 #area-principal {
-    width: 100%; /* Alteração para largura de 100% para ocupar toda a largura da tela */
+    width: 100%;
     padding: 15px;
 }
 
 @media (min-width: 768px) {
     #area-principal {
-        max-width: 920px; /* Largura máxima para telas maiores que 768px */
+        max-width: 920px;
         margin: 0 auto;
     }
 }
@@ -98,7 +100,7 @@ h3 {
 }
 
 #area-postagens {
-    width: auto;
+    width: 100%;
     background-color: var(--cor-branca);
 }
 
@@ -127,11 +129,13 @@ a:hover {
     text-decoration: underline;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: var(--cor-azul);
 }
 
-header a:link, header a:visited {
+header a:link,
+header a:visited {
     color: var(--cor-branca);
     padding: 8px 12px;
     text-decoration: none;
