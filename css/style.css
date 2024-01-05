@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 /* Configurações gerais para todos os elementos da página */
-* and (max-width: 920px){
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -69,9 +69,15 @@ footer {
 }
 
 #area-principal {
-    width: 920px;
-    margin: 0 auto;
+    width: 100%; /* Alteração para largura de 100% para ocupar toda a largura da tela */
     padding: 15px;
+}
+
+@media (min-width: 768px) {
+    #area-principal {
+        max-width: 920px; /* Largura máxima para telas maiores que 768px */
+        margin: 0 auto;
+    }
 }
 
 h2 {
